@@ -1,7 +1,7 @@
 {
 "className":"org.apache.spark.examples.SparkPi",
 "args": [1000],
-"file":"s3a://vkarthikeyan/spark-examples_2.11-2.4.5.7.2.7.6-2.jar",
+"file":"s3a://go01-demo/datahub_livy_sparksubmit/spark-examples_2.11-2.4.7.1.13.247211.0-28.jar",
 "driverMemory": "2G",
 "driverCores": 1,
 "executorCores": 2,

@@ -1,6 +1,7 @@
 Open Terminal in CML and Run:
 
 # Create Destination Directory
+# Replace "go01-demo" with Cloud Storage location needed
 hdfs dfs -mkdir s3a://go01-demo/datahub_livy_sparksubmit
 
 # Copy Example Spark Jar from CML Spark to Cloud Storage
