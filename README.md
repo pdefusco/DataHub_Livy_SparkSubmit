@@ -52,11 +52,12 @@ In the CML Terminal, execute the following command to copy the Spark Example Jar
 
 Open "spark_submit.py" the CML Workbench Editor and add the following values at lines 75-77:
 
-![alt text](img/livy_url.png)
-
 * URL: obtain this from the CDP DataHub cluster -> Endpoints tab
 * Username: your CDP Workload User. This is the same as your CML Username.
 * Password: your CDP Workload Password. This is the same as your CML Password.
+
+![alt text](img/livy_url.png)
+
 
 Execute "spark_submit.py". You should see confirmation of submission and execution in your CML Session prompt on the right side of your screen.
 
