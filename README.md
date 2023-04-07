@@ -34,7 +34,26 @@ Open the CML Terminal and run the following command:
 
 ```hdfs dfs -mkdir s3a://<STORAGE_LOCATION>/datahub_livy_sparksubmit```
 
-If you don't know your STORAGE_LOCATION parameter you can obtain it from the  
+If you don't know your STORAGE_LOCATION parameter you can obtain it by executing script "get_storage.py" in the same CML Session.
+
+#### Copy the Example Jar from CML to S3  
+
+In the CML Terminal, execute the following command to copy the Spark Example Jar to S3:
+
+```hdfs dfs -cp /opt/spark/examples/jars/spark-examples_2.11-2.4.7.1.13.247211.0-28.jar s3a://go01-demo/datahub_livy_sparksubmit```
+
+
+#### Trigger the Spark Job in Data Hub
+
+Open "spark_submit.py" the CML Workbench Editor and add the following values at lines 75-77:
+
+* URL: obtain this from the CDP DataHub cluster -> Endpoints tab
+* Username: your CDP Workload User. This is the same as your CML Username.
+* Password: your CDP Workload Password. This is the same as your CML Password.
+
+Execute "spark_submit.py". You should see confirmation of submission and execution in your CML Session prompt on the right side of your screen.
+
+Navigate to your CDP Data Hub cluster, open Livy and validate that your Spark Job has run.
 
 
 

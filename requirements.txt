@@ -1,6 +1,5 @@
 git+https://github.com/fastforwardlabs/cmlbootstrap#egg=cmlbootstrap
 numpy
 pandas
-plotly
 requests
 urllib3
