@@ -46,7 +46,7 @@ If you don't know your STORAGE_LOCATION parameter you can obtain it by executing
 
 In the CML Terminal, execute the following command to copy the Spark Example Jar to S3:
 
-```hdfs dfs -cp /opt/spark/examples/jars/spark-examples_2.11-2.4.7.1.13.247211.0-28.jar s3a://go01-demo/datahub_livy_sparksubmit```
+```hdfs dfs -cp /opt/spark/examples/jars/spark-examples_2.11-2.4.7.1.13.247211.0-28.jar s3a://<STORAGE_LOCATION>/datahub_livy_sparksubmit```
 
 #### Trigger the Spark Job in Data Hub
 
